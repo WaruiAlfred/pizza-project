@@ -1,0 +1,45 @@
+body{
+  background-color: black;
+}
+
+.my-navbar-light{
+  background-color: transparent !important;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 0;
+}
+
+.my-navbar-light .navbar-brand{
+  color: blue;
+}
+
+.my-navbar-light .navbar-brand:hover,
+.my-navbar-light .navbar-brand:focus{
+  color: blue;
+}
+
+.my-navbar-light .navbar-nav > .nav-item > .nav-link{
+  font-size: 17px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 300;
+  color: blue;
+  opacity: 5 !important;
+}
+
+.my-navbar-light .navbar-nav > .nav-item > .nav-link:hover{
+  color: white;
+}
+
+.my-navbar-light.scrolled{
+  margin-top: 0px;
+  transition: 0.3s all ease-out;
+}
+
+.navbar-brand{
+  font-weight: 900;
+  font-size: 25px;
+}
