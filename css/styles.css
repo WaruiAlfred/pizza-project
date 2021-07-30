@@ -54,3 +54,30 @@ body{
 .policy{
   font-style: italic;
 }
+
+.menu{
+  margin-bottom: 50px;
+  padding-left: 18px;
+  padding-right: 20px;
+}
+.menu h3, h4{
+  text-align: center;
+  color: white;
+}
+
+.size{
+  margin-bottom: 30px;
+}
+
+.crust-topping{
+  padding-left: 10%;
+  margin-bottom: 30px;
+}
+
+.crust ul li{
+  color: white;
+}
+
+.topping ul li{
+  color: white;
+}
