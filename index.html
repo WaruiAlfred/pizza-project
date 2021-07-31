@@ -11,22 +11,23 @@
 
   <body>
     <!--nav start-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark my-navbar-light" id="navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-navbar-light" id="navbar">
       <div class="container">
-        <a href="index.html" class="navbar-brand">Mama's Pizza</a>
+        <a  class="navbar-brand">Mama's Pizza</a>
 
         <div class="collapse navbar-collapse" id="my-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item "><a href="#" class="nav-link">About us</a></li>
-            <li class="nav-item "><a href="#" class="nav-link">Menu</a></li>
-            <li class="nav-item "><a href="#" class="nav-link">Order</a></li>
+            <li class="nav-item "><a href="#our-info" class="nav-link">About us</a></li>
+            <li class="nav-item "><a href="#menu" class="nav-link">Menu</a></li>
+            <li class="nav-item "><a href="#order" class="nav-link">Order</a></li>
+            <li class="nav-item "><a href="#contacts" class="nav-link">Contact Us</a></li>
           </ul>
         </div>
       </div>
     </nav>
     <!--nav ends-->
     <div class="container-fluid">
-      <div class="our-info">
+      <div id="our-info">
         <h3>ABOUT US</h3>
         <p>Here at <b>Mama's Pizza</b> we are dedicated to satisfying our customers.We have competent
          workers who promptly respond to customers orders according to our policy <span class="policy">
@@ -40,7 +41,7 @@
         <p>Friday............10am-3pm</p>
         <p>Weekend..............closed</p>
       </div>
-      <div class="menu">
+      <div id="menu">
         <h3>MENU</h3>
         <div class=" row size">
           <h4>Sizes</h4>
@@ -94,9 +95,9 @@
           </div>
         </div>
       </div>
-      <div class="order">
-        <h3>ORDER HERE</h3>
+      <div id="order">
         <form id="ordered">
+          <h3>ORDER HERE</h3>
           <div class="form-group">
             <label for="pizza-size">Pizza Size</label>
             <select class="form-control" id="pizza-size">
@@ -150,6 +151,13 @@
             <button type="submit" class="btn btn-info">Place Order</button>
           </div>
         </form>
+      </div>
+      <div id="contacts">
+        <h3>CONTACT US</h3>
+        <img src="images/facebook.png" alt="facebook">
+        <img src="images/twitter.png" alt="twitter">
+        <img src="images/pinterest.png" alt="pinterest">
+        <img src="images/you_tube.png" alt="youtube">
       </div>
     </div>
   </body>
