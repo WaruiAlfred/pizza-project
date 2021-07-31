@@ -19,7 +19,7 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item "><a href="#" class="nav-link">About us</a></li>
             <li class="nav-item "><a href="#" class="nav-link">Menu</a></li>
-            <li class="nav-item order"><a href="#" class="nav-link">Order</a></li>
+            <li class="nav-item "><a href="#" class="nav-link">Order</a></li>
           </ul>
         </div>
       </div>
@@ -93,6 +93,63 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="order">
+        <h3>ORDER HERE</h3>
+        <form id="ordered">
+          <div class="form-group">
+            <label for="pizza-size">Pizza Size</label>
+            <select class="form-control" id="pizza-size">
+              <option selected>Choose...</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="extra-large">Extra Large</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pizza-crust">Pizza Crust</label>
+            <select class="form-control" id="pizza-crust">
+              <option selected>Choose...</option>
+              <option value="cheese">Cheese Stuffed Crust</option>
+              <option value="cracker">Cracker Crust</option>
+              <option value="flat-bread">Flat Bread CRust</option>
+              <option value="thin">Thin Crust</option>
+              <option value="thick">Thick Crust</option>
+              <option value="gluten-free">Gluten Free Crust</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="number-of-pizza">Number required</label>
+            <input type="number" id="number-of-pizza" class="form-control" placeholder="Input the number of pizzas you want to order">
+          </div>
+          <div class="form-group">
+            <label for="pizza-topping">Pizza Topping</label>
+            <select class="form-control" id="pizza-topping">
+              <option selected>Choose...</option>
+              <option value="chicken-hawaiian">Chicken Hawaiian</option>
+              <option value="cheese-burger">Cheese Burger</option>
+              <option value="meat">Meat</option>
+              <option value="chicken-beef-pepperoni">Chicken and Beef Pepperoni</option>
+              <option value="veg-feast">Veg Feast</option>
+              <option value="herbs-rosemary">Herbs:Rosemary</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="acquisition-method">Acquisition Method</label>
+            <select class="form-control" id="acquisition-method">
+              <option selected>Choose...</option>
+              <option value="delivered">Delivered</option>
+              <option value="pick-from-shop">Pick from shop</option>
+            </select>
+          </div>
+          <div id="charges">
+            <p>Total price for your order:<span class="total-charge"></span></p>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button type="submit" class="btn btn-info">Place Order</button>
+          </div>
+        </form>
       </div>
     </div>
   </body>
