@@ -81,3 +81,25 @@ body{
 .topping ul li{
   color: white;
 }
+
+.order{
+  margin-bottom: 30px;
+}
+
+.order h3{
+  text-align: center;
+  color: white;
+}
+
+#ordered{
+  background-color: white;
+  margin-right: 20%;
+  margin-left: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#ordered label,
+#charges{
+  font-weight: bolder;
+}
