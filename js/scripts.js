@@ -53,6 +53,20 @@ $(document).ready(function(){
 
     $("#total-charge").text(price.toString().addSign());
 
+    $("#output").append("<tr>" + "<td>" + orderMade.size + "</td>" + 
+                         "<td>" + orderMade.crust + "</td>" +  
+                         "<td>" + orderMade.topping + "</td>" +  
+                         "<td>" + orderMade.number + "</td>" + 
+                        "</tr>");
+
+    if (orderMade.acquisition === "delivered") {
+      var location = prompt("Input delivery location.ie estate/street,County");
+      alert ("Your order will be delivered to your location.");
+    } else {
+      return false;
+    }
+
+   
     resetFields();
 
   });
