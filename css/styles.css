@@ -34,11 +34,6 @@ body{
   color: orange;
 }
 
-.my-navbar-light.scrolled{
-  margin-top: 0px;
-  transition: 0.3s all ease-out;
-}
-
 .navbar-brand{
   font-weight: 1000;
   font-size: 30px;
@@ -113,4 +108,14 @@ body{
 
 #contacts img{
   padding-left: 10px;
+}
+
+#charges{
+  margin-bottom: 30px;
+  margin-top: 5px;
+  background-color: orange;
+}
+
+.btn1{
+  margin-top: 7px;
 }
