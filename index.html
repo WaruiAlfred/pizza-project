@@ -11,20 +11,22 @@
 
   <body>
     <!--nav start-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-navbar-light" id="navbar">
-      <div class="container">
-        <a  class="navbar-brand">Mama's Pizza</a>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-navbar-light" id="navbar">
+        
+          <a  class="navbar-brand">Mama's Pizza</a>
 
-        <div class="collapse navbar-collapse" id="my-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item "><a href="#our-info" class="nav-link">About us</a></li>
-            <li class="nav-item "><a href="#menu" class="nav-link">Menu</a></li>
-            <li class="nav-item "><a href="#order" class="nav-link">Order</a></li>
-            <li class="nav-item "><a href="#contacts" class="nav-link">Contact Us</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+          <div class="navbar-collapse" id="my-nav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="#our-info" class="nav-link">About us</a></li>
+              <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+              <li class="nav-item"><a href="#order" class="nav-link">Order</a></li>
+              <li class="nav-item"><a href="#contacts" class="nav-link">Contact Us</a></li>
+            </ul>
+          </div>
+        
+      </nav>
+    </div>
     <!--nav ends-->
     <div class="container-fluid">
       <div id="our-info">
@@ -47,22 +49,22 @@
           <h4>Sizes</h4>
           <div class="col-md-3 card">
             <img src="images/small-p.png" alt="small">
-            <p class="card-footer">It averages between 8-10 inches in diameter and yields 6 pieces.<br>
+            <p class="card-footer"><b>Small</b><br>It averages between 8-10 inches in diameter and yields 6 pieces.<br>
             <b>Price:@Ksh.550</b></p>
           </div>
           <div class="col-md-3 card">
             <img src="images/medium-p.png" alt="medium">
-            <p class="card-footer">It is about 12 inches in diameter and yields 8 pieces.<br>
+            <p class="card-footer"><b>Medium</b><br>It is about 12 inches in diameter and yields 8 pieces.<br>
             <b>Price:@Ksh.800</b></p>
           </div>
           <div class="col-md-3 card">
             <img src="images/large-p.png" alt="large">
-            <p class="card-footer">It is 14 inches in diameter and yields 10 pieces.<br>
+            <p class="card-footer"><b>Large</b><br>It is 14 inches in diameter and yields 10 pieces.<br>
             <b>Price:@Ksh.1000</b></p>
           </div>
           <div class="col-md-3 card">
             <img src="images/ex-large-p.png" alt="extra large">
-            <p class="card-footer">It is about 16 inches in diameter and yields 12 pieces.<br>
+            <p class="card-footer"><b>Extra large</b><br>It is about 16 inches in diameter and yields 12 pieces.<br>
             <b>Price:@Ksh.1200</b></p>
           </div>
         </div>
@@ -72,10 +74,8 @@
               <h4>Crust</h4>
               <ul>
                 <li><b>Cheese Stuffed Crust:</b>It's a four-layer crust of cheese.<br>@Ksh.100</li>
-                <li><b>Cracker Crust:</b>The cracker crust looks and feels just like the name suggests – crunchy.<br>@Ksh.80</li>
                 <li><b>Flat Bread Crust:</b>The flatbread crust is a lighter, thin pizza crust often eaten as an appetizer. It has become incredibly popular over the past couple of years especially as more people look for more health conscious kind of pizzas.<br>@Ksh.50</li>
                 <li><b>Thin Crust:</b>Thin crust pizzas are characterized by a crunchy edge and a slightly slimmer center where cheese, sauce and other ingredients are placed.<br>@Ksh.80</li>
-                <li><b>Thick Crust:</b>The thick crust pizza is a pizza that typically ranges between 1/8 to ¼ inches in thickness. <br>@Ksh.120</li>
                 <li><b>Gluten Free Crust:</b>Our Gluten Free Crust contains no wheat, rye, or barley and has a fairly less gluten content.<br>@Ksh.140</li>
               </ul>
             </div>
@@ -86,10 +86,8 @@
               <ul>
                 <li><b>Chicken Hawaiian</b><br>@Ksh.160</li>
                 <li><b>Cheese Burger</b><br>@Ksh.67</li>
-                <li><b>Meat</b><br>@Ksh.50</li>
-                <li><b>Chicken and Beef Pepperoni</b><br>@Ksh.80</li>
+                <li><b>Pepperoni</b><br>@Ksh.80</li>
                 <li><b>Veg Feast</b><br>@Ksh.120</li>
-                <li><b>Herbs:Rosemary</b><br>@Ksh.140</li>
               </ul>
             </div>
           </div>
@@ -100,41 +98,37 @@
           <h3>ORDER HERE</h3>
           <div class="form-group">
             <label for="pizza-size">Pizza Size</label>
-            <select class="form-control" id="pizza-size">
+            <select class="form-control" id="pizza-size" required>
               <option selected>Choose...</option>
               <option value="small">Small</option>
               <option value="medium">Medium</option>
               <option value="large">Large</option>
-              <option value="extra-large">Extra Large</option>
+              <option value="extraLarge">Extra Large</option>
             </select>
           </div>
           <div class="form-group">
             <label for="pizza-crust">Pizza Crust</label>
-            <select class="form-control" id="pizza-crust">
+            <select class="form-control" id="pizza-crust" required>
               <option selected>Choose...</option>
-              <option value="cheese">Cheese Stuffed Crust</option>
-              <option value="cracker">Cracker Crust</option>
-              <option value="flat-bread">Flat Bread CRust</option>
-              <option value="thin">Thin Crust</option>
-              <option value="thick">Thick Crust</option>
-              <option value="gluten-free">Gluten Free Crust</option>
+              <option value="cheeseStuffed">Cheese Stuffed</option>
+              <option value="flatBread">Flat Bread</option>
+              <option value="thin">Thin</option>
+              <option value="glutenFree">Gluten Free</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="pizza-topping">Pizza Topping</label>
+            <select class="form-control" id="pizza-topping" required>
+              <option selected>Choose...</option>
+              <option value="chickenHawaiian">Chicken Hawaiian</option>
+              <option value="cheeseBurger">Cheese Burger</option>
+              <option value="pepperoni">Pepperoni</option>
+              <option value="veggie">Veggie</option>
             </select>
           </div>
           <div class="form-group">
             <label for="number-of-pizza">Number required</label>
-            <input type="number" id="number-of-pizza" class="form-control" placeholder="Input the number of pizzas you want to order">
-          </div>
-          <div class="form-group">
-            <label for="pizza-topping">Pizza Topping</label>
-            <select class="form-control" id="pizza-topping">
-              <option selected>Choose...</option>
-              <option value="chicken-hawaiian">Chicken Hawaiian</option>
-              <option value="cheese-burger">Cheese Burger</option>
-              <option value="meat">Meat</option>
-              <option value="chicken-beef-pepperoni">Chicken and Beef Pepperoni</option>
-              <option value="veg-feast">Veg Feast</option>
-              <option value="herbs-rosemary">Herbs:Rosemary</option>
-            </select>
+            <input type="number" id="number-of-pizza" class="form-control" placeholder="Input the number of pizzas you want to order" required>
           </div>
           <div class="form-group">
             <label for="acquisition-method">Acquisition Method</label>
@@ -145,7 +139,7 @@
             </select>
           </div>
           <div id="charges">
-            <p>Total price for your order:<span class="total-charge"></span></p>
+            <p>Total price for your order:<span id="total-charge"></span></p>
           </div>
           <div class="d-grid gap-2 col-6 mx-auto">
             <button type="submit" class="btn btn-info">Place Order</button>
