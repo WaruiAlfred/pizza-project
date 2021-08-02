@@ -59,6 +59,8 @@ $(document).ready(function(){
                          "<td>" + orderMade.number + "</td>" + 
                         "</tr>");
 
+    resetFields();
+    
     if (orderMade.acquisition === "delivered") {
       var location = prompt("Input delivery location.ie estate/street,County");
       alert ("Your order will be delivered to your location.");
