@@ -10,7 +10,7 @@ This is a web application of *Mama's Pizza* restraurant where customers are able
 ## Behaviour Driven Development
 |Program behaviour|Expected Input|Expected Output|
 |:---:            |:---:         |:---:          |
-|Calculates total price for the order made|Pizza,size,crust,topping and number|Total price for your order:Ksh.390\Summary:|
+|Calculates total price for the order made|Pizza,size,crust,topping and number|Total price for your order:Ksh.390    Summary:|
 |Collect customer location and give confirmation message|User location and method of acquisition=delivered|"Your order will be delivered to your location."|
 ## Known Bugs
 There are known bugs.
@@ -21,6 +21,7 @@ There are known bugs.
   * JQUERY
   * BOOTSTRAP
   * MARKDOWN
+  * There are no dependencies required
 ## My contacts
 Email me:alfred.kahenya@student.moringaschool.com\
 My phone number:0740365281
